@@ -112,5 +112,63 @@ body.gelap .card {
 /* ===== Bagian Katalog ===== */
 
 /* ===== Bagian Detail ===== */
+.detail-kembali {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.detail-kembali:hover { text-decoration: underline; }
 
+.detail-produk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 24px;
+}
+.detail-produk[hidden] { display: none; }
+
+.detail-gambar img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.detail-kategori {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+}
+.detail-info h2 { font-size: 30px; margin: 6px 0 12px; }
+.detail-harga { font-size: 26px; font-weight: bold; margin-bottom: 14px; }
+.detail-deskripsi { margin-bottom: 24px; }
+
+.tombol-pesan {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.tombol-pesan:hover { background-color: #1ebe5b; }
+
+#detail-kosong { text-align: center; padding: 40px 0; }
+
+/* Mode gelap halaman detail */
+body.gelap .detail-produk { background-color: #1c2538; border-color: #33415c; }
+body.gelap .detail-kembali { color: #e8e8e8; }
+body.gelap .detail-kategori { color: #aab3c5; }
+
+@media (max-width: 700px) {
+  .detail-produk { grid-template-columns: 1fr; }
+}
 /* ===== Bagian Profil ===== */
