@@ -1,221 +1,11 @@
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beranda | Cup of Joy</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    /* CSS khusus halaman beranda */
-    .beranda-page {
-      padding: 30px 7%;
-      color: #35251f;
-    }
-
-    .hero-beranda {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 35px;
-      padding: 45px;
-      border-radius: 22px;
-      background: linear-gradient(135deg, #f4e4d4, #dfb995);
-      overflow: hidden;
-    }
-
-    .hero-content {
-      flex: 1;
-    }
-
-    .hero-content .tagline {
-      color: #805438;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
-
-    .hero-content h2 {
-      margin: 15px 0;
-      font-size: 42px;
-      line-height: 1.2;
-      color: #4b2e20;
-    }
-
-    .hero-content p {
-      line-height: 1.8;
-      color: #634936;
-    }
-
-    .hero-image {
-      width: 42%;
-      max-width: 360px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 18px;
-    }
-
-    .btn-utama {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 13px 24px;
-      border-radius: 9px;
-      background: #70452d;
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn-utama:hover {
-      background: #4b2e20;
-      transform: translateY(-2px);
-    }
-
-    .promo-beranda {
-      margin-top: 55px;
-    }
-
-    .judul-beranda {
-      margin-bottom: 25px;
-      text-align: center;
-    }
-
-    .judul-beranda .subjudul {
-      color: #a16c49;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
-
-    .judul-beranda h2 {
-      margin: 8px 0;
-      font-size: 30px;
-    }
-
-    .promo-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .promo-card {
-      overflow: hidden;
-      border-radius: 15px;
-      background: #fffaf5;
-      color: #35251f;
-      text-decoration: none;
-      box-shadow: 0 4px 15px rgba(70, 40, 20, 0.10);
-      transition: 0.3s;
-    }
-
-    .promo-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 22px rgba(70, 40, 20, 0.16);
-    }
-
-    .promo-card img {
-      display: block;
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-    }
-
-    .promo-card-content {
-      padding: 18px;
-    }
-
-    .promo-card-content h3 {
-      margin: 0 0 8px;
-    }
-
-    .promo-card-content p {
-      margin: 0 0 12px;
-      color: #78685e;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .harga-promo {
-      color: #8b5433;
-      font-weight: bold;
-    }
-
-    .navigasi-beranda {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 25px;
-      margin: 55px 0 30px;
-    }
-
-    .navigasi-card {
-      padding: 30px;
-      border: 1px solid #ead8c8;
-      border-radius: 17px;
-      background: #fffaf5;
-      color: #35251f;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .navigasi-card:hover {
-      transform: translateY(-5px);
-      border-color: #a16c49;
-    }
-
-    .navigasi-card .ikon {
-      font-size: 32px;
-    }
-
-    .navigasi-card h3 {
-      margin: 12px 0 8px;
-    }
-
-    .navigasi-card p {
-      color: #78685e;
-      line-height: 1.7;
-    }
-
-    .navigasi-card .tautan {
-      display: inline-block;
-      margin-top: 8px;
-      color: #8b5433;
-      font-weight: bold;
-    }
-
-    @media (max-width: 800px) {
-      .hero-beranda {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 25px;
-      }
-
-      .hero-content h2 {
-        font-size: 32px;
-      }
-
-      .hero-image {
-        width: 100%;
-        max-width: none;
-        height: 240px;
-      }
-
-      .promo-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 550px) {
-      .beranda-page {
-        padding: 20px 5%;
-      }
-
-      .promo-grid,
-      .navigasi-beranda {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -243,11 +33,13 @@
       <div class="hero-content">
         <p class="tagline">WELCOME TO CUP OF JOY</p>
         <h2>Secangkir Cerita, Sejuta Kebahagiaan.</h2>
+
         <p>
           Temukan minuman favoritmu dari pilihan kopi, milk series,
           hingga tea series. Dibuat untuk menemani setiap momen
           dan memberikan kebahagiaan dalam setiap tegukan.
         </p>
+
         <a href="katalog.html" class="btn-utama">Jelajahi Menu</a>
       </div>
 
@@ -268,8 +60,10 @@
 
       <div class="promo-grid">
 
+        <!-- Coffee Latte -->
         <a href="detail.html?produk=Coffee%20Latte" class="promo-card">
-          <img src="img/coffee-latte.jpg" alt="Coffee Latte">
+          <img src="images/Coffee_latte.jpg" alt="Coffee Latte">
+
           <div class="promo-card-content">
             <h3>Coffee Latte</h3>
             <p>Perpaduan espresso dan susu yang lembut.</p>
@@ -277,8 +71,10 @@
           </div>
         </a>
 
+        <!-- Matcha Latte -->
         <a href="detail.html?produk=Matcha%20Latte" class="promo-card">
-          <img src="img/matcha-latte.jpg" alt="Matcha Latte">
+          <img src="images/Matcha_latte.jpg" alt="Matcha Latte">
+
           <div class="promo-card-content">
             <h3>Matcha Latte</h3>
             <p>Rasa matcha yang khas dengan susu creamy.</p>
@@ -286,8 +82,10 @@
           </div>
         </a>
 
+        <!-- Brown Sugar Coffee -->
         <a href="detail.html?produk=Brown%20Sugar%20Coffee" class="promo-card">
-          <img src="img/brown-sugar-coffee.jpg" alt="Brown Sugar Coffee">
+          <img src="images/Brown_sugar_coffee.jpg" alt="Brown Sugar Coffee">
+
           <div class="promo-card-content">
             <h3>Brown Sugar Coffee</h3>
             <p>Kopi susu dengan manis gula aren.</p>
@@ -298,7 +96,7 @@
       </div>
     </section>
 
-    <!-- Navigasi ke halaman lain -->
+    <!-- Navigasi halaman lain -->
     <section class="navigasi-beranda">
 
       <a href="katalog.html" class="navigasi-card">
@@ -327,7 +125,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Projek Kelompok 2 Pemrogaman Web Dasar</p>
+    <p>&copy; 2026 Projek Kelompok 2 Pemrograman Web Dasar</p>
   </footer>
 
   <!-- JavaScript utama -->
