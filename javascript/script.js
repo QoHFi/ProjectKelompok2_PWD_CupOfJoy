@@ -38,57 +38,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ```
 // ===== Bagian Katalog =====
-.promo-text {
-  flex: 1;
-}
+```javascript
+// JavaScript khusus halaman Katalog Cup of Joy
 
-.label-promo {
-  display: inline-block;
-  padding: 7px 14px;
-  margin-bottom: 12px;
-  background: #70452D;
-  color: white;
-  border-radius: 20px;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
+document.addEventListener("DOMContentLoaded", function () {
 
-.promo-katalog h2 {
-  font-size: 34px;
-  margin: 10px 0;
-  color: #4B2E20;
-}
+  // Mengambil semua kartu produk
+  const kartuProduk = document.querySelectorAll(".produk-card");
 
-.promo-katalog img {
-  width: 35%;
-  max-width: 300px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 15px;
-}
+  // Efek saat kursor diarahkan ke kartu produk
+  kartuProduk.forEach(function (kartu) {
+    kartu.addEventListener("mouseenter", function () {
+      kartu.style.transform = "translateY(-6px)";
+    });
 
-.btn-promo {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 12px 22px;
-  background: #70452D;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-}
+    kartu.addEventListener("mouseleave", function () {
+      kartu.style.transform = "translateY(0)";
+    });
+  });
 
-@media (max-width: 600px) {
-  .promo-katalog {
-    flex-direction: column;
-    align-items: stretch;
+  // Tombol untuk menuju daftar produk
+  const tombolMenu = document.querySelector(".btn-promo");
+
+  if (tombolMenu) {
+    tombolMenu.addEventListener("click", function () {
+      console.log("Pengunjung melihat katalog minuman.");
+    });
   }
 
-  .promo-katalog img {
-    width: 100%;
-    max-width: none;
-    height: 200px;
-  }
-}
+  console.log("Katalog Cup of Joy berhasil dimuat.");
+
+});
+```
 // ===== Bagian Detail =====
 
 // ===== Bagian Profil =====
