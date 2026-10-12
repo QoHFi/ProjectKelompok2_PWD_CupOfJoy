@@ -1,172 +1,119 @@
 ```html
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katalog | Cup of Joy</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+<main class="katalog-page">
 
-<body>
+  <!-- Banner Promo -->
+  <section class="promo-katalog">
+    <div class="promo-text">
+      <span class="label-promo">SPECIAL PROMO</span>
+      <h2>Temukan Minuman Favoritmu!</h2>
+      <p>Nikmati berbagai pilihan minuman spesial dari Cup of Joy.</p>
+      <a href="#daftar-produk" class="btn-promo">Lihat Menu</a>
+    </div>
+    <img src="images/Coffee_latte.jpg" alt="Promo Coffee Latte">
+  </section>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <h1 class="logo">Cup of Joy</h1>
+  <!-- Daftar Produk -->
+  <section class="daftar-produk" id="daftar-produk">
+    <div class="judul-section">
+      <p class="subjudul">OUR MENU</p>
+      <h2>Katalog Minuman</h2>
+      <p>Pilih minuman favorit yang bikin harimu lebih menyenangkan.</p>
+    </div>
 
-    <nav>
-      <ul class="menu">
-        <li><a href="beranda.html">Beranda</a></li>
-        <li><a href="profil.html">Profil</a></li>
-        <li><a href="katalog.html">Katalog</a></li>
-      </ul>
-    </nav>
+    <div class="produk-grid">
 
-    <button id="tombol-tema" type="button">Mode Gelap</button>
-  </header>
+      <a href="detail.html?produk=Americano" class="produk-card">
+        <img src="images/Americano.jpg" alt="Americano">
+        <div class="produk-info">
+          <h3>Americano</h3>
+          <p>Kopi hitam dengan cita rasa khas.</p>
+          <span>Rp18.000</span>
+        </div>
+      </a>
 
-  <!-- Konten utama -->
-  <main class="katalog-page">
+      <a href="detail.html?produk=Blueberry%20Iced%20Tea" class="produk-card">
+        <img src="images/Blueberry-Iced-Tea.jpg" alt="Blueberry Iced Tea">
+        <div class="produk-info">
+          <h3>Blueberry Iced Tea</h3>
+          <p>Teh segar dengan rasa blueberry.</p>
+          <span>Rp20.000</span>
+        </div>
+      </a>
 
-    <!-- Banner Promo -->
-    <section class="promo-katalog">
-      <div class="promo-text">
-        <span class="label-promo">SPECIAL PROMO</span>
-        <h2>Temukan Minuman Favoritmu!</h2>
-        <p>
-          Nikmati berbagai pilihan minuman spesial dari Cup of Joy.
-          Temani harimu dengan minuman favorit yang dibuat dengan penuh cinta.
-        </p>
-        <a href="#daftar-produk" class="btn-promo">Lihat Menu</a>
-      </div>
+      <a href="detail.html?produk=Brown%20Sugar%20Coffee" class="produk-card">
+        <img src="images/BrownSugar_Coffe.jpg" alt="Brown Sugar Coffee">
+        <div class="produk-info">
+          <h3>Brown Sugar Coffee</h3>
+          <p>Kopi susu dengan manis gula aren.</p>
+          <span>Rp23.000</span>
+        </div>
+      </a>
 
-      <img src="images/Coffee_latte.jpg" alt="Coffee Latte Cup of Joy">
-    </section>
+      <a href="detail.html?produk=Brown%20Sugar%20Boba%20Milk%20Tea" class="produk-card">
+        <img src="images/BrownSugarBoba_MilkTea.jpeg" alt="Brown Sugar Boba Milk Tea">
+        <div class="produk-info">
+          <h3>Brown Sugar Boba Milk Tea</h3>
+          <p>Milk tea lembut dengan boba dan gula aren.</p>
+          <span>Rp25.000</span>
+        </div>
+      </a>
 
-    <!-- Daftar Produk -->
-    <section id="daftar-produk">
+      <a href="detail.html?produk=Chocolate%20Drink" class="produk-card">
+        <img src="images/Chocolate_Drink.jpeg" alt="Chocolate Drink">
+        <div class="produk-info">
+          <h3>Chocolate Drink</h3>
+          <p>Minuman cokelat yang creamy.</p>
+          <span>Rp22.000</span>
+        </div>
+      </a>
 
-      <div class="judul-katalog">
-        <p class="subjudul">OUR MENU</p>
-        <h2>Katalog Minuman</h2>
-        <p>Pilih minuman favoritmu dan nikmati setiap momennya.</p>
-      </div>
+      <a href="detail.html?produk=Coffee%20Latte" class="produk-card">
+        <img src="images/Coffee_latte.jpg" alt="Coffee Latte">
+        <div class="produk-info">
+          <h3>Coffee Latte</h3>
+          <p>Perpaduan espresso dan susu.</p>
+          <span>Rp22.000</span>
+        </div>
+      </a>
 
-      <div class="daftar-produk">
+      <a href="detail.html?produk=Lemon%20Tea" class="produk-card">
+        <img src="images/Lemon_Tea.jpeg" alt="Lemon Tea">
+        <div class="produk-info">
+          <h3>Lemon Tea</h3>
+          <p>Teh segar dengan sentuhan lemon.</p>
+          <span>Rp17.000</span>
+        </div>
+      </a>
 
-        <!-- Americano -->
-        <a href="detail.html?produk=Americano" class="produk-card">
-          <img src="images/Americano.jpg" alt="Americano">
-          <div class="produk-card-content">
-            <h3>Americano</h3>
-            <p>Kopi hitam dengan cita rasa khas.</p>
-            <span class="harga">Rp18.000</span>
-          </div>
-        </a>
+      <a href="detail.html?produk=Matcha%20Latte" class="produk-card">
+        <img src="images/Matcha_Latte.jpg" alt="Matcha Latte">
+        <div class="produk-info">
+          <h3>Matcha Latte</h3>
+          <p>Matcha dengan campuran susu lembut.</p>
+          <span>Rp24.000</span>
+        </div>
+      </a>
 
-        <!-- Blueberry Iced Tea -->
-        <a href="detail.html?produk=Blueberry%20Iced%20Tea" class="produk-card">
-          <img src="images/Blueberry-Iced-Tea.jpg" alt="Blueberry Iced Tea">
-          <div class="produk-card-content">
-            <h3>Blueberry Iced Tea</h3>
-            <p>Teh segar dengan rasa blueberry.</p>
-            <span class="harga">Rp20.000</span>
-          </div>
-        </a>
+      <a href="detail.html?produk=Milk%20Tea" class="produk-card">
+        <img src="images/Milk_Tea.jpeg" alt="Milk Tea">
+        <div class="produk-info">
+          <h3>Milk Tea</h3>
+          <p>Teh susu dengan rasa yang nikmat.</p>
+          <span>Rp20.000</span>
+        </div>
+      </a>
 
-        <!-- Brown Sugar Coffee -->
-        <a href="detail.html?produk=Brown%20Sugar%20Coffee" class="produk-card">
-          <img src="images/BrownSugar_Coffe.jpg" alt="Brown Sugar Coffee">
-          <div class="produk-card-content">
-            <h3>Brown Sugar Coffee</h3>
-            <p>Kopi susu dengan manis gula aren.</p>
-            <span class="harga">Rp24.000</span>
-          </div>
-        </a>
+      <a href="detail.html?produk=Red%20Velvet%20Milk" class="produk-card">
+        <img src="images/RedVelvet_Milk.jpeg" alt="Red Velvet Milk">
+        <div class="produk-info">
+          <h3>Red Velvet Milk</h3>
+          <p>Susu red velvet yang lembut dan manis.</p>
+          <span>Rp23.000</span>
+        </div>
+      </a>
 
-        <!-- Brown Sugar Boba Milk Tea -->
-        <a href="detail.html?produk=Brown%20Sugar%20Boba%20Milk%20Tea" class="produk-card">
-          <img src="images/BrownSugarBoba_MilkTea.jpeg" alt="Brown Sugar Boba Milk Tea">
-          <div class="produk-card-content">
-            <h3>Brown Sugar Boba Milk Tea</h3>
-            <p>Milk tea lembut dengan boba dan gula aren.</p>
-            <span class="harga">Rp25.000</span>
-          </div>
-        </a>
+    </div>
+  </section>
 
-        <!-- Chocolate Drink -->
-        <a href="detail.html?produk=Chocolate%20Drink" class="produk-card">
-          <img src="images/Chocolate_Drink.jpeg" alt="Chocolate Drink">
-          <div class="produk-card-content">
-            <h3>Chocolate Drink</h3>
-            <p>Minuman cokelat dengan rasa creamy.</p>
-            <span class="harga">Rp22.000</span>
-          </div>
-        </a>
-
-        <!-- Coffee Latte -->
-        <a href="detail.html?produk=Coffee%20Latte" class="produk-card">
-          <img src="images/Coffee_latte.jpg" alt="Coffee Latte">
-          <div class="produk-card-content">
-            <h3>Coffee Latte</h3>
-            <p>Perpaduan espresso dan susu lembut.</p>
-            <span class="harga">Rp22.000</span>
-          </div>
-        </a>
-
-        <!-- Lemon Tea -->
-        <a href="detail.html?produk=Lemon%20Tea" class="produk-card">
-          <img src="images/Lemon_Tea.jpeg" alt="Lemon Tea">
-          <div class="produk-card-content">
-            <h3>Lemon Tea</h3>
-            <p>Teh segar dengan sentuhan lemon.</p>
-            <span class="harga">Rp16.000</span>
-          </div>
-        </a>
-
-        <!-- Matcha Latte -->
-        <a href="detail.html?produk=Matcha%20Latte" class="produk-card">
-          <img src="images/Matcha_Latte.jpg" alt="Matcha Latte">
-          <div class="produk-card-content">
-            <h3>Matcha Latte</h3>
-            <p>Matcha dengan campuran susu lembut.</p>
-            <span class="harga">Rp25.000</span>
-          </div>
-        </a>
-
-        <!-- Milk Tea -->
-        <a href="detail.html?produk=Milk%20Tea" class="produk-card">
-          <img src="images/Milk_Tea.jpeg" alt="Milk Tea">
-          <div class="produk-card-content">
-            <h3>Milk Tea</h3>
-            <p>Teh susu dengan rasa yang nikmat.</p>
-            <span class="harga">Rp18.000</span>
-          </div>
-        </a>
-
-        <!-- Red Velvet Milk -->
-        <a href="detail.html?produk=Red%20Velvet%20Milk" class="produk-card">
-          <img src="images/RedVelvet_Milk.jpeg" alt="Red Velvet Milk">
-          <div class="produk-card-content">
-            <h3>Red Velvet Milk</h3>
-            <p>Susu red velvet yang lembut dan manis.</p>
-            <span class="harga">Rp24.000</span>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Projek Kelompok 2 Pemrograman Web Dasar</p>
-  </footer>
-
-  <!-- JavaScript utama -->
-  <script src="javascript/script.js"></script>
-
-</body>
-</html>
+</main>
 ```
