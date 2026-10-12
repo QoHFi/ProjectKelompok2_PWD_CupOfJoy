@@ -1,39 +1,104 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profil | Cup of Joy</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <header class="navbar">
-      <h1 class="logo">Cup of Joy</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil | Cup of Joy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <nav>
-        <ul class="menu">
-          <li><a href="beranda.html">Beranda</a></li>
-          <li><a href="profil.html">Profil</a></li>
-          <li><a href="katalog.html">Katalog</a></li>
-        </ul>
-      </nav>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Cup of Joy</h1>
 
-      <button id="tombol-tema" type="button">Mode Gelap</button>
-    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+      </ul>
+    </nav>
 
-    <!-- Konten utama -->
-    <main>
+    <button id="tombol-tema" type="button">Mode Gelap</button>
+  </header>
 
-    </main>
+  <!-- Konten utama -->
+  <main>
+    <h2>Cup of Joy</h2>
+    <p><strong>Since 2026</strong></p>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 Projek Kelompok 2 Pemrogaman Web Dasar</p>
-    </footer>
+    <br>
+    <h3>History</h3>
+    <p>Cup of Joy berawal dari kedai kecil hingga menjadi tempat berkumpulnya komunitas penikmat kopi pilihan sejak
+      tahun 2026.</p>
 
-    <!-- JavaScript -->
-    <script src="javascript/script.js"></script>
-  </body>
+    <br>
+    <h3>Profil Pemilik & Anggota</h3>
+    <div class="grid-card">
+      <div class="card">
+        <h4>Qonita</h4>
+        <p>Pemilik</p>
+        <a href="https://www.instagram.com/qohfi_?psln=a3o3bndtbW8xYm56" target="_blank">@qohfi_</a>
+      </div>
+      <div class="card">
+        <h4>Akmal</h4>
+        <p>Anggota</p>
+        <a href="https://www.instagram.com/viasda_?obrf=N291OHRxb2J1aXdz" target="_blank">@viasda_</a>
+      </div>
+      <div class="card">
+        <h4>Parsa</h4>
+        <p>Anggota</p>
+        <a href="https://www.instagram.com/muhmmdprsa_?obrf=MTA4NGRsbmYyd2ZzZA%3D%3D&utm_source=qr"
+          target="_blank">@muhmmdprsa_</a>
+      </div>
+      <div class="card">
+        <h4>Ano</h4>
+        <p>Anggota</p>
+        <a href="https://www.instagram.com/frez_pyro/" target="_blank">@frez_pyro</a>
+      </div>
+    </div>
+
+    <br>
+    <h3>Beans Pilihan</h3>
+    <div class="grid-card">
+      <div class="card">
+        <img src="images/Americano.jpg" alt="Arabica Bean" />
+        <h4>Arabica Gayo</h4>
+        <p>Aroma tajam dan keasaman seimbang.</p>
+      </div>
+      <div class="card">
+        <img src="images/Coffe_latte.jpg" alt="Robusta Bean" />
+        <h4>Robusta Temanggung</h4>
+        <p>Rasa tebal dengan hint cokelat hitam.</p>
+      </div>
+    </div>
+
+    <br>
+    <h3>Menu Kategori</h3>
+    <div class="card">
+      <h4>Coffee: Espresso, Americano, Café Latte</h4>
+      <h4>Milk Series: Matcha Latte, Red Velvet, Brown Sugar Boba</h4>
+      <h4>Tea Series: Lemon Tea, Blueberry Iced Tea</h4>
+    </div>
+
+    <br>
+    <div style="margin: 20px 0;">
+      <button type="button" id="tombol-sapa">Sapa Cafe</button>
+      <button type="button" id="tombol-status">Cek Status Cafe</button>
+    </div>
+
+    <p id="status-profil" style="margin-top: 10px; font-weight: 500;"></p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Projek Kelompok 2 Pemrogaman Web Dasar</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>
