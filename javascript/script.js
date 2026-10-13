@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 ```
-// ===== Bagian Katalog =====
-```javascript
+  // ===== Bagian Katalog =====
+  ```javascript
 // JavaScript khusus halaman Katalog Cup of Joy
 
 document.addEventListener("DOMContentLoaded", function () {
