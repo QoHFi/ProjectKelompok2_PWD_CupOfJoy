@@ -14,7 +14,7 @@ if (tombolTema) {
 }
 
 // ===== Bagian Beranda =====
-```javascript
+
 // JavaScript khusus halaman Beranda Cup of Joy
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("Selamat datang di Cup of Joy!");
 
 });
-```
+
 // ===== Bagian Katalog =====
-```javascript
+
 // JavaScript khusus halaman Katalog Cup of Joy
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("Katalog Cup of Joy berhasil dimuat.");
 
 });
-```
+
 // ===== Bagian Detail =====
 
 // ===== Bagian Profil =====
