@@ -107,10 +107,407 @@ body.gelap .card {
   }
 }
 
-/* ===== Bagian Beranda ===== */
+ /* CSS khusus halaman beranda */
+    .beranda-page {
+      padding: 30px 7%;
+      color: #35251f;
+    }
 
-/* ===== Bagian Katalog ===== */
+    .hero-beranda {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+      padding: 45px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #f4e4d4, #dfb995);
+      overflow: hidden;
+    }
 
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content .tagline {
+      color: #805438;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .hero-content h2 {
+      margin: 15px 0;
+      font-size: 42px;
+      line-height: 1.2;
+      color: #4b2e20;
+    }
+
+    .hero-content p {
+      line-height: 1.8;
+      color: #634936;
+    }
+
+    .hero-image {
+      width: 42%;
+      max-width: 360px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .btn-utama {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 13px 24px;
+      border-radius: 9px;
+      background: #70452d;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-utama:hover {
+      background: #4b2e20;
+      transform: translateY(-2px);
+    }
+
+    .promo-beranda {
+      margin-top: 55px;
+    }
+
+    .judul-beranda {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .judul-beranda .subjudul {
+      color: #a16c49;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .judul-beranda h2 {
+      margin: 8px 0;
+      font-size: 30px;
+    }
+
+    .promo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .promo-card {
+      overflow: hidden;
+      border-radius: 15px;
+      background: #fffaf5;
+      color: #35251f;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(70, 40, 20, 0.10);
+      transition: 0.3s;
+    }
+
+    .promo-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(70, 40, 20, 0.16);
+    }
+
+    .promo-card img {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .promo-card-content {
+      padding: 18px;
+    }
+
+    .promo-card-content h3 {
+      margin: 0 0 8px;
+    }
+
+    .promo-card-content p {
+      margin: 0 0 12px;
+      color: #78685e;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .harga-promo {
+      color: #8b5433;
+      font-weight: bold;
+    }
+
+    .navigasi-beranda {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      margin: 55px 0 30px;
+    }
+
+    .navigasi-card {
+      padding: 30px;
+      border: 1px solid #ead8c8;
+      border-radius: 17px;
+      background: #fffaf5;
+      color: #35251f;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .navigasi-card:hover {
+      transform: translateY(-5px);
+      border-color: #a16c49;
+    }
+
+    .navigasi-card .ikon {
+      font-size: 32px;
+    }
+
+    .navigasi-card h3 {
+      margin: 12px 0 8px;
+    }
+
+    .navigasi-card p {
+      color: #78685e;
+      line-height: 1.7;
+    }
+
+    .navigasi-card .tautan {
+      display: inline-block;
+      margin-top: 8px;
+      color: #8b5433;
+      font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+      .hero-beranda {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 25px;
+      }
+
+      .hero-content h2 {
+        font-size: 32px;
+      }
+
+      .hero-image {
+        width: 100%;
+        max-width: none;
+        height: 240px;
+      }
+
+      .promo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 550px) {
+      .beranda-page {
+        padding: 20px 5%;
+      }
+
+      .promo-grid,
+      .navigasi-beranda {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Mode gelap - halaman beranda */
+body.gelap .beranda-page {
+  color: #FFF9F5;
+}
+
+body.gelap .judul-beranda h2,
+body.gelap .judul-beranda p {
+  color: #FFF9F5;
+}
+
+body.gelap .judul-beranda .subjudul {
+  color: #F4A7A0;
+}
+
+ /* CSS khusus halaman katalog */
+    .katalog-page {
+      padding: 35px 7%;
+      color: var(--text-color, #35251f);
+    }
+
+    .promo-katalog {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 35px;
+      margin-bottom: 55px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #f4e4d4, #e7c6a8);
+      overflow: hidden;
+    }
+
+    .promo-text {
+      flex: 1;
+    }
+
+    .label-promo {
+      display: inline-block;
+      padding: 7px 14px;
+      margin-bottom: 12px;
+      background: #70452d;
+      color: white;
+      border-radius: 20px;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .promo-katalog h2 {
+      font-size: 34px;
+      margin: 10px 0;
+      color: #4b2e20;
+    }
+
+    .promo-katalog p {
+      line-height: 1.7;
+      color: #624735;
+    }
+
+    .btn-promo {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 22px;
+      background: #70452d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .promo-katalog img {
+      width: 35%;
+      max-width: 300px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .judul-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .judul-section .subjudul {
+      color: #a16c49;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .judul-section h2 {
+      font-size: 30px;
+      margin: 8px 0;
+    }
+
+    .judul-section p {
+      line-height: 1.6;
+    }
+
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .produk-card {
+      display: block;
+      overflow: hidden;
+      border-radius: 15px;
+      background: #fffaf5;
+      color: #35251f;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(70, 40, 20, 0.10);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .produk-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 9px 22px rgba(70, 40, 20, 0.17);
+    }
+
+    .produk-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .produk-info {
+      padding: 16px;
+    }
+
+    .produk-info h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .produk-info p {
+      min-height: 42px;
+      margin: 0 0 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #78685e;
+    }
+
+    .produk-info span {
+      color: #8b5433;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .produk-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .katalog-page {
+        padding: 22px 5%;
+      }
+
+      .promo-katalog {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px;
+      }
+
+      .promo-katalog h2 {
+        font-size: 27px;
+      }
+
+      .promo-katalog img {
+        width: 100%;
+        max-width: none;
+        height: 200px;
+      }
+
+      .produk-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+/* Mode gelap - halaman katalog */
+body.gelap .katalog-page {
+  color: #FFF9F5;
+}
+
+body.gelap .judul-section h2,
+body.gelap .judul-section p {
+  color: #FFF9F5;
+}
+
+body.gelap .judul-section .subjudul {
+  color: #F4A7A0; 
+}
 /* ===== Bagian Detail ===== */
 
 /* ===== Bagian Profil ===== */
