@@ -561,9 +561,9 @@ body.gelap .judul-section .subjudul {
 #detail-kosong { text-align: center; padding: 40px 0; }
 
 /* Mode gelap halaman detail */
-body.gelap .detail-produk { background-color: #1c2538; border-color: #33415c; }
+body.gelap .detail-produk { background-color: #fffaf5; border-color: #5c3f33; color: #4b2e20;}
 body.gelap .detail-kembali { color: #e8e8e8; }
-body.gelap .detail-kategori { color: #aab3c5; }
+body.gelap .detail-kategori { color: #777; }
 
 @media (max-width: 700px) {
   .detail-produk { grid-template-columns: 1fr; }
