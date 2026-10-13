@@ -36,15 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("Selamat datang di Cup of Joy!");
 
 });
-<<<<<<< HEAD
-```
-  // ===== Bagian Katalog =====
-  ```javascript
-=======
+
 
 // ===== Bagian Katalog =====
 
->>>>>>> 0afde605f68bc69e0980f617c3cd1f7b3c7870f9
+
 // JavaScript khusus halaman Katalog Cup of Joy
 
 document.addEventListener("DOMContentLoaded", function () {
